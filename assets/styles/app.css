@@ -609,7 +609,7 @@ a {
     font-weight: 400;
     letter-spacing: 1px;
     position: absolute;
-    bottom: -14px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Dosis', sans-serif; }
@@ -625,6 +625,13 @@ a {
       left: -120%; }
     .mainheader__subname:after {
       right: -120%; }
+  .mainheader__read {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'fira_code';
+    font-weight: normal;
+    top: -18px;
+    left: 0; }
   .mainheader__text {
     margin: 0 auto;
     max-width: 600px;
