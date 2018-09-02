@@ -1,0 +1,18 @@
+#insta {
+  text-align: center;
+}
+
+.insta {
+  &__btn {
+    position: relative;
+    padding-left: 44px;
+    margin-top: 16px;
+
+    &-img {
+      width: 22px;
+      position: absolute;
+      top: 6px;
+      left: 16px;
+    }
+  }
+}

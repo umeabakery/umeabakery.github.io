@@ -9,11 +9,13 @@
   <link rel="icon" type="image/png" href="assets/images/favicon32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="assets/images/favicon16x16.png" sizes="16x16">
   <link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
+  <script src="assets/scripts/libs/jquery-3.3.1.min.js"></script>
+  <script src="assets/scripts/libs/instafeed.min.js"></script>
   <script src="assets/scripts/app.js"></script>
 </head>
 
 <body>
-  <header class="mainheader">
+  <header class="mainheader" id="mainheader">
     <nav class="menu-fixed" style="display:none;">
       <ul class="h-clearlist">
         <li class="menu-fixed__item">
@@ -47,9 +49,6 @@
     <h2 class="mainheader__sub h4">
       Swedish baking in its most loving form.
     </h2>
-    <p class="mainheader__text">
-
-    </p>
 
     <nav class="menu-header">
       <ul class="h-clearlist">
@@ -91,6 +90,12 @@
         </li>
       </ul>
     </nav>
+​
+    <picture>
+      <source srcset="assets/images/bg_lg.jpg" media="(min-width: 1200px)">
+      <source srcset="assets/images/bg_md.jpg" media="(min-width: 760px)">
+      <img src="assets/images/bg_sm.jpg" alt="Umeå Bakery" class="mainheader__bg"/>
+    </picture>
   </header>
 
   <main>
@@ -175,6 +180,16 @@
         <div class="centered" style="margin-top: 4em">
           <a class="btn" href="mailto:isabellhgg@gmail.com">Request order</a>
         </div>
+      </div>
+    </section>
+
+    <section class="block block--alt block--dark" id="insta">
+      <h1 class="block__title">Our updates</h1>
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <div class="block__content--wide">
+        <iframe src="https://snapwidget.com/embed/592373" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no"
+          style="border:none; overflow:hidden; width:100%; "></iframe>
+        <a class="btn insta__btn" href="https://www.instagram.com/umeabakery/" target="_blank"><img class="insta__btn-img" src="assets/images/instagram-white.svg" alt="Instagram">Follow us on Instagram</a>
       </div>
     </section>
 
@@ -338,5 +353,9 @@
       <p>KVK#: 66864410</p>
     </section>
   </main>
+  <a class="scroll-top" href="#mainheader">
+    <img class="scroll-top__img" src="assets/images/arrow-up.svg" alt="Back up">
+    <img class="scroll-top__img--hover" src="assets/images/arrow-up-hover.svg" alt="Back up">
+  </a>
 </body>
 </html>
