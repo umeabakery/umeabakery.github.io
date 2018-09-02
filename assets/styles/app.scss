@@ -97,13 +97,21 @@ a {
 }
 
 .mainheader {
-  background-image: url('../images/bg.jpg');
-  background-position: 0 27%;
-  background-size: cover;
   color: $color-dark;
   padding: 3em 0;
   position: relative;
   text-align: center;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
 
   &:before {
     background-color: $color-mint;
@@ -125,8 +133,9 @@ a {
     font-size: 50px;
     position: relative;
     text-shadow: 1px 1px 2px $color-mint;
+
     @media screen and (min-width: 768px) {
-      font-size: 56px;
+      font-size: 80px;
     }
   }
 
@@ -172,6 +181,22 @@ a {
     }
     &:after {
       right: -120%;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      bottom: -30px;
+      &:before,
+      &:after {
+        width: 130%;
+      }
+
+      &:before {
+        left: -150%;
+      }
+      &:after {
+        right: -150%;
+      }
     }
   }
 
@@ -446,6 +471,11 @@ a {
     margin: 0 auto;
     max-width: 636px;
     padding: 0 18px;
+
+    &--wide {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
   }
 
 }
@@ -606,3 +636,41 @@ a {
     }
   }
 }
+
+.scroll-top {
+  display: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    opacity: 0;
+    transition: opacity 0.2s;
+
+    &--visible {
+      transition: opacity 0.2s;
+      opacity: 1;
+    }
+
+    &__img {
+      width: 50px;
+
+      &--hover {
+        transition: opacity 0.2s;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      .scroll-top__img--hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@import 'insta';
