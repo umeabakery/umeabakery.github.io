@@ -251,9 +251,13 @@ a {
   font-family: 'caveat', sans-serif;
   font-weight: 700;
 
-
   &__item {
     display: inline-block;
+    width: calc(50% - 4px);
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
   }
 
   &__link {
@@ -591,18 +595,18 @@ a {
 
   &-list {
     display: inline-block;
-    margin-top: 2em;
-    @media screen and (min-width: 768px) {
-      margin-top: 3em;
-    }
   }
 
   &__item {
-    display: inline-block;
     padding-left: 60px;
     position: relative;
     line-height: 60px;
-    margin: 0 1em;
+    margin: 1em;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
   }
 
   &__imgbox {
@@ -614,6 +618,7 @@ a {
     position: absolute;
     left: 0;
     transition: background-color 0.2s;
+    text-align: center;
   }
 
   &__img {
