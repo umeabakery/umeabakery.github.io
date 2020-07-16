@@ -497,7 +497,8 @@ html {
   font-family: 'fira_code';
   font-size: 16px;
   line-height: 1.4;
-  color: #2F446A; }
+  color: #2F446A;
+  overflow-x: hidden; }
 
 a {
   color: #0c2a27;
