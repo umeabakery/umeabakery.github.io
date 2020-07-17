@@ -448,26 +448,31 @@ a {
   text-decoration: none; }
 
 .highlight {
-  background-color: #2F446A;
   padding: 14px;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  font-size: 12px;
-  z-index: 9;
   box-sizing: border-box;
   margin: 0;
-  color: #fff; }
-  .highlight a {
-    color: #fff;
-    font-family: 'dosis';
-    font-size: 16px;
-    letter-spacing: 0.34px; }
-    .highlight a:hover {
-      color: #cfffdd; }
+  line-height: 1.6; }
+  .highlight--mint {
+    background-color: #cfffdd;
+    border-left: solid 3px #B9D9B4; }
+  .highlight--fixed {
+    font-size: 12px;
+    background-color: #2F446A;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    color: #fff; }
+    .highlight--fixed a {
+      color: #fff;
+      font-family: 'dosis';
+      font-size: 16px;
+      letter-spacing: 0.34px; }
+      .highlight--fixed a:hover {
+        color: #cfffdd; }
   @media screen and (min-width: 768px) {
-    .highlight {
+    .highlight--fixed {
       max-width: 194px;
       bottom: 50%;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); } }

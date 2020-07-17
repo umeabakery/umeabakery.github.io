@@ -64,33 +64,44 @@ a {
 }
 
 .highlight {
-  background-color: $color-dark;
   padding: 14px;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  font-size: 12px;
-  z-index: 9;
   box-sizing: border-box;
   margin: 0;
-  color: #fff;
+  line-height: 1.6;
 
-  a {
+  &--mint {
+    background-color: $color-mint;
+    border-left: solid 3px $color-mint-dark;
+  }
+
+  &--fixed {
+    font-size: 12px;
+    background-color: $color-dark;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
     color: #fff;
-    font-family: 'dosis';
-    font-size: 16px;
-    letter-spacing: 0.34px;
 
-    &:hover {
-      color: $color-mint;
+    a {
+      color: #fff;
+      font-family: 'dosis';
+      font-size: 16px;
+      letter-spacing: 0.34px;
+
+      &:hover {
+        color: $color-mint;
+      }
     }
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 194px;
-    bottom: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    &--fixed {
+      max-width: 194px;
+      bottom: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
