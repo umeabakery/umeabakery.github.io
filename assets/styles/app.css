@@ -452,10 +452,16 @@ a {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
-  line-height: 1.6; }
-  .highlight--mint {
-    background-color: #cfffdd;
-    border-left: solid 3px #B9D9B4; }
+  line-height: 1.6;
+  background-color: #2F446A;
+  color: #fff;
+  border-radius: 9px; }
+  .highlight a {
+    color: #fff;
+    letter-spacing: 0.34px;
+    font-size: 19px; }
+    .highlight a:hover {
+      color: #cfffdd; }
   .highlight--fixed {
     font-size: 12px;
     background-color: #2F446A;
@@ -463,14 +469,9 @@ a {
     bottom: 0;
     right: 0;
     z-index: 9;
-    color: #fff; }
+    border-radius: 9px 0 0 9px; }
     .highlight--fixed a {
-      color: #fff;
-      font-family: 'dosis';
-      font-size: 16px;
-      letter-spacing: 0.34px; }
-      .highlight--fixed a:hover {
-        color: #cfffdd; }
+      font-size: 16px; }
   @media screen and (min-width: 768px) {
     .highlight--fixed {
       max-width: 194px;
@@ -526,7 +527,9 @@ html {
 
 a {
   color: #0c2a27;
-  font-weight: 600; }
+  font-family: 'dosis';
+  font-weight: 600;
+  font-size: 18px; }
   a:hover {
     color: #288D85; }
 
@@ -957,7 +960,8 @@ a {
   .connect__link {
     color: #fff;
     display: block;
-    padding: 0 10px; }
+    padding: 0 10px;
+    font-size: 20px; }
     .connect__link:hover {
       color: #FDE6BD; }
       .connect__link:hover .connect__imgbox {

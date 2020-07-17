@@ -69,10 +69,18 @@ a {
   box-sizing: border-box;
   margin: 0;
   line-height: 1.6;
+  background-color: $color-dark;
+  color: #fff;
+  border-radius: 9px;
 
-  &--mint {
-    background-color: $color-mint;
-    border-left: solid 3px $color-mint-dark;
+  a {
+    color: #fff;
+    letter-spacing: 0.34px;
+    font-size: 19px;;
+
+    &:hover {
+      color: $color-mint;
+    }
   }
 
   &--fixed {
@@ -82,17 +90,10 @@ a {
     bottom: 0;
     right: 0;
     z-index: 9;
-    color: #fff;
+    border-radius: 9px 0 0 9px;
 
     a {
-      color: #fff;
-      font-family: 'dosis';
       font-size: 16px;
-      letter-spacing: 0.34px;
-
-      &:hover {
-        color: $color-mint;
-      }
     }
   }
 
