@@ -14,7 +14,9 @@ html {
 
 a {
   color: darken($color-green, 25%);
+  font-family: 'dosis';
   font-weight: 600;
+  font-size: 18px;
 
   &:hover {
     color: $color-green;
@@ -630,6 +632,7 @@ a {
     color: $color-white;
     display: block;
     padding: 0 10px;
+    font-size: 20px;
 
     &:hover {
       color: $color-skin;
