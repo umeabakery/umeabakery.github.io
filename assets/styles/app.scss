@@ -314,6 +314,10 @@ a {
 
     @media screen and (min-width: 768px) {
       padding: 10px 150px 10px 10px;
+
+      &--ep {
+        padding: 10px;
+      }
     }
   }
 
@@ -546,7 +550,6 @@ a {
 
     @media screen and (min-width: 768px) {
       padding-left: 130px;
-
       &--sm {
         padding-left: 90px;
         margin: 4em 0;
