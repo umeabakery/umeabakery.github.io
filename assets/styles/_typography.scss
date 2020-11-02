@@ -90,7 +90,7 @@ a {
     bottom: 0;
     right: 0;
     z-index: 9;
-    border-radius: 9px 0 0 9px;
+    border-radius: 0;
 
     a {
       font-size: 16px;
@@ -102,6 +102,7 @@ a {
       max-width: 194px;
       bottom: 50%;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 9px 0 0 9px;
     }
   }
 }
