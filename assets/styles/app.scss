@@ -575,6 +575,11 @@ a {
         padding-left: 90px;
         margin: 4em 0;
       }
+
+      &--about {
+        line-height: 1.4;
+        max-width: 449px;
+      }
     }
 
     @media screen and (min-width: 1112px) {
@@ -582,6 +587,10 @@ a {
       width: 50%;
       margin-bottom: 24px;
     }
+  }
+
+  &__descr {
+    text-align: left;
   }
 
   &__imgbox {
