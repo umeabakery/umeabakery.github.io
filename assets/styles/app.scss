@@ -339,6 +339,15 @@ a {
     top: 17px;
   }
 
+  &__partnerprice {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      float: right;
+      margin-bottom: 0;
+    }
+  }
+
   &__extra {
     display: inline-block;
     padding: 4px 8px 0;
@@ -539,21 +548,39 @@ a {
   }
 }
 
+.users {
+  @media screen and (min-width: 1112px) {
+    margin: 0 auto;
+    max-width: 1004px;
+    padding: 0 14px;
+  }
+}
 
 .user {
   &__item {
     position: relative;
+    margin-bottom: 14px;
 
     &--sm {
       margin: 2em 0;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 649px) {
       padding-left: 130px;
+      max-width: 349px;
+      min-height: 100px;
+      line-height: 100px;
+
       &--sm {
         padding-left: 90px;
         margin: 4em 0;
       }
+    }
+
+    @media screen and (min-width: 1112px) {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 24px;
     }
   }
 
@@ -571,7 +598,7 @@ a {
       height: 60px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 649px) {
       left: 0;
       margin: 0;
       position: absolute;
