@@ -922,12 +922,17 @@ a {
       line-height: 100px; }
       .user__item--sm {
         padding-left: 90px;
-        margin: 4em 0; } }
+        margin: 4em 0; }
+      .user__item--about {
+        line-height: 1.4;
+        max-width: 449px; } }
   @media screen and (min-width: 1112px) {
     .user__item {
       display: inline-block;
       width: 50%;
       margin-bottom: 24px; } }
+.user__descr {
+  text-align: left; }
 .user__imgbox {
   border-radius: 50%;
   line-height: 100px;
