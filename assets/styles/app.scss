@@ -548,7 +548,8 @@ a {
   }
 }
 
-.users {
+.users,
+.client {
   @media screen and (min-width: 1112px) {
     margin: 0 auto;
     max-width: 1004px;
@@ -719,4 +720,21 @@ a {
   }
 }
 
+.client {
+  &__li {
+    width: calc(100%/2);
+    display: inline-block;
+    margin: 14px;
+
+    @media screen and (min-width: 649px) {
+      width: calc(100%/5);
+    }
+
+  }
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+  }
+}
 @import 'insta';
