@@ -540,7 +540,7 @@ a {
   display: inline-block;
   padding: 8px 16px 5px;
   background-color: #288D85;
-  border-radius: 3px;
+  border-radius: 34px;
   border: 0;
   color: #fff;
   margin: 0 auto;
@@ -548,8 +548,8 @@ a {
   letter-spacing: 2px;
   transition: background-color 0.2s; }
   .btn:hover {
-    background-color: #0c2a27;
-    color: #fff; }
+    background-color: #cfffdd;
+    color: #288D85 !important; }
   .btn--border {
     background-color: transparent;
     border: solid 2px #288D85;
@@ -557,6 +557,8 @@ a {
     .btn--border:hover {
       background-color: #288D85;
       color: #fff; }
+  .btn--sm {
+    font-size: 13px !important; }
 
 .centered {
   text-align: center; }
