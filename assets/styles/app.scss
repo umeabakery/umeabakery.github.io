@@ -29,7 +29,7 @@ a {
   display: inline-block;
   padding: 8px 16px 5px;
   background-color: $color-green;
-  border-radius: 3px;
+  border-radius: 34px;
   border: 0;
   color: $color-white;
   margin: 0 auto;
@@ -38,8 +38,8 @@ a {
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: darken($color-green, 25%);
-    color: $color-white;
+    background-color: #cfffdd;
+    color: $color-green !important;
   }
 
   &--border {
@@ -51,6 +51,10 @@ a {
       background-color: $color-green;
       color: $color-white;
     }
+  }
+
+  &--sm {
+    font-size: 13px !important;
   }
 }
 
